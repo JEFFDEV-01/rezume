@@ -1,0 +1,749 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black !important;
+
+}
+
+/* main header */
+
+#main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("./assets/image_1.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 150vh;
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 30%;
+    position: absolute;
+
+    /* width: 100%; */
+}
+
+/* navigation links */
+#site-links {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+
+}
+
+#site-links li {
+    list-style: none;
+
+}
+
+
+#site-links li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+
+}
+
+#site-links li a:hover {
+    color: rgba(227, 227, 6, 0.835);
+}
+
+/* hero section */
+#hero-section {
+    text-align: center;
+
+}
+
+#hero-section h1 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 100px;
+}
+
+#hero-section h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+#hero-section h5 {
+
+    color: rgb(128, 128, 128);
+    font-size: 1em;
+}
+
+
+/* portfolio section*/
+
+/* portfolio header */
+#portfolio-section header {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+#portfolio-section header h2 {
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+/*  portfolio buttons */
+#pf-but {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#pf-but>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: gray;
+    transition: color 200ms linear;
+    font-size: 1em;
+}
+
+#pf-but>button:hover {
+    color: rgba(227, 227, 6, 0.835);
+}
+
+
+/* default color for the all button */
+#pf-but>#all-category {
+    color: rgba(227, 227, 6, 0.835);
+}
+
+
+/* portfolio cards */
+#portfolio-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: 80px;
+
+}
+
+/* portfolio card scaleout effect */
+#portfolio-cards article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: scale-out 300ms;
+
+
+}
+
+@keyframes scale-out {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#portfolio-cards img {
+    width: 100%;
+    /* display: block; */
+
+
+}
+
+#portfolio-cards div>h5 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    /* margin: auto; */
+}
+
+#portfolio-cards div>h3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+
+}
+
+/* resume section */
+
+#resume-section {
+    /* padding: 10px; */
+    margin: 80px;
+}
+
+#resume-section h2 {
+    margin-bottom: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-align: center;
+
+}
+
+
+#qualification {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+#qualification h3 {
+    color: white;
+    font-weight: lighter;
+    font-size: x-large;
+    width: 50%;
+}
+
+#resume-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+
+}
+
+
+/* resume cards */
+.card1 {
+    color: white;
+    background-color: rgba(199, 195, 195, 0.233);
+    border-radius: 5px;
+
+    padding: 30px;
+
+}
+
+
+
+.card1 .course {
+    color: rgba(255, 255, 106, 0.562);
+    font-size: larger;
+    font-weight: 100;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+
+.card1 .intro {
+    font-size: small;
+    font-weight: lighter;
+    color: gray;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.card1 h5 {
+    color: gray;
+    font-size: medium;
+    font-weight: 100;
+    font-size: larger;
+    margin-top: 0;
+}
+
+/* about me section */
+#about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: 80px;
+    /* border: 1px solid white; */
+}
+
+#about-section img {
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* border: 1px solid white; */
+}
+
+#about-me {
+    width: 50%;
+}
+
+#about-me h3 {
+    font-size: 2.5em;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#about-me p {
+    color: gray;
+    line-height: 1.7;
+    margin-bottom: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+#about-me #about-p2 {
+    font-size: smaller;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+
+/* about links */
+#about-links {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#about-links a {
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+
+#about-link1 {
+    background-color: rgba(173, 173, 76, 0.966);
+    padding: 10px 25px;
+}
+
+#about-link1:hover {
+    background-color: rgba(151, 151, 34, 0.918);
+}
+
+#about-link2 {
+    background-color: rgba(173, 173, 169, 0.945);
+    padding: 10px 25px;
+}
+
+#about-link2:hover {
+    background-color: rgba(138, 138, 136, 0.973);
+}
+
+
+
+/* testimonial section */
+#testimonial-section {
+    margin: 3em;
+    margin-top: 100px;
+}
+
+#testimonial-section>h2 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    padding-left: 50px;
+
+}
+
+#testimonial-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+
+    -ms-overflow-style: none;
+    /* IE and EDGE */
+    scrollbar-width: none;
+}
+
+#testimonial-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+#testimonial-carousel>article {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+/* #testimonial-carousel>article:before {
+    content: '';
+    position: absolute;
+    top: 20px;  /* Adjust this to change the vertical positioning of the tail */
+/* right: 47.7em; Positions the tail on the left of the card */
+/* width: 0; */
+/* height: 0; */
+/* border-top: 25px solid transparent; */
+/* border-bottom: 20px solid transparent; */
+/* border-right: 20px solid rgba(132, 129, 129, 0.309);
+}
+    */
+
+
+#testimonial-carousel img {
+    margin-top: -130px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#testimonial-carousel>article p {
+    color: gray;
+    font-style: italic;
+    text-align: justify;
+    white-space: wrap;
+}
+
+.profile {
+    width: 50%;
+    background-color: rgba(132, 129, 129, 0.309);
+    padding: 20px;
+    border-radius: 10px;
+    color: gray;
+
+
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+.profile-links a {
+    color: rgba(151, 151, 34, 0.918);
+
+}
+
+/* indicators */
+#indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    padding: 1em;
+    padding-left: 3em;
+}
+
+#indicators a {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(177, 174, 174);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#indicators a:hover {
+    background-color: rgba(215, 215, 6, 0.688)
+}
+
+/* about us/ Services section */
+
+#about-us {
+    margin-top: 100px;
+}
+
+#about-us>h3 {
+
+    margin: 50px;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#about-flex {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 80px;
+    width: 90%;
+}
+
+#about-flex article {
+
+    background-color: rgba(132, 129, 129, 0.309);
+    color: white;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 200ms linear;
+}
+
+#about-flex article:hover {
+    box-shadow: 0px 0 4px 2px rgba(163, 183, 74, 0.656);
+}
+
+#about-flex article>i {
+    font-size: 2em;
+    background-color: rgba(215, 215, 6, 0.906);
+    width: 2em;
+    height: 2em;
+    padding-top: 15px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+}
+
+#about-flex article p {
+    color: gray;
+    text-align: justify;
+}
+
+#about-flex article>a {
+    color: rgba(215, 215, 6, 0.906);
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 300ms linear;
+}
+
+#about-flex article>a:hover {
+    transform: scale(1.3);
+}
+
+/* blog section */
+#blog-section {
+    color: white;
+}
+
+#blog-section h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 2.5em;
+}
+
+.blog-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 90%;
+
+    margin: 80px;
+
+}
+
+.blog-card article {
+    width: 100%;
+    background-color: rgba(114, 111, 111, 0.307);
+    transition: transform 300ms linear;
+}
+
+.blog-card article:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card article img {
+    width: 100%;
+}
+
+#blog-section article p {
+    color: gray;
+}
+
+.blog-card article h3,
+p,
+div {
+    padding: 15px;
+}
+
+.blog-card article div a {
+    color: gray;
+    text-decoration: none;
+
+}
+
+/* contact section */
+
+#contact-section {
+    color: white;
+    margin: 80px;
+
+}
+
+#contact-section h2 {
+    font-size: 2.5em;
+    width: 30%;
+    margin: auto;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 10px;
+    width: 100%;
+
+
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin-top: 40px;
+}
+
+#contact form h3 {
+
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+#contact form input,
+textarea {
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(76, 74, 74, 0.467);
+    outline: none;
+    border: 3px solid;
+}
+
+#contact form textarea {
+    height: 200px;
+}
+
+#contact form input:focus {
+    border-color: rgb(62, 61, 60);
+}
+
+#contact form textarea:focus {
+    border-color: rgb(62, 61, 60);
+}
+
+#contact form #submit {
+    color: rgba(215, 215, 6, 0.906);
+    width: 40%;
+    border-radius: 30px;
+    padding-bottom: 35px;
+}
+
+#contact form #submit:hover {
+    color: white;
+    background-color: rgba(215, 215, 6, 0.688);
+    border-color: transparent;
+}
+
+#contact #feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 50%;
+}
+
+#contact #feedback div {
+    padding: 0;
+}
+
+#contact #feedback h3 {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+#contact #feedback div h4,
+a {
+    font-size: smaller;
+    font-weight: 200;
+}
+
+#contact #feedback p {
+    padding: 0;
+    font-size: smaller;
+    font-weight: 200;
+}
+
+#contact #feedback div a {
+    text-decoration: none;
+    color: rgba(215, 215, 6, 0.688);
+}
+
+
+/* footer section */
+
+footer {
+    border-top: 1px solid gray;
+}
+
+footer h4 {
+    margin-top: 25px;
+    color: rgba(177, 173, 173, 0.795);
+    text-align: center;
+    font-weight: 200;
+}
+
+footer h4 a {
+    color: rgba(215, 215, 6, 0.688);
+    text-decoration: none;
+}
+
+footer h4 a:hover {
+    color: rgba(255, 255, 2, 0.993);
+
+}
+
+/* heart symbol */
+footer h4 i {
+    color: red;
+    font-size: large;
+}
+
+/* social icons */
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    margin: auto;
+}
+
+footer div i {
+
+    font-size: 1.5em;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+
+}
+
+footer div a {
+    text-decoration: none;
+    color: rgba(215, 215, 6, 0.688);
+    background-color: rgba(76, 74, 74, 0.467);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+footer div a:hover {
+    color: rgba(255, 255, 2, 0.993);
+}
